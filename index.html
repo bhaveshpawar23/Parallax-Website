@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style2.css">
+    <title>BPG BIKES</title>
+</head>
+<body>
+    <header class="head">
+        <a href="" class="logo">BPG BIKES</a>
+        <navbar class="nav">
+            <a href="#home">Home</a>
+            <a href="#perfromance">Perfromance</a>
+            <a href="#progress">Progress</a>
+            <a href="#contact">Contact</a>
+        </navbar>
+        <div class="ham" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+    <section class="img1" id="home">
+        <h1>Step into the Future of Biking.</h1>
+        <p>Explore the newest innovations in vehicle technology, performance, and design.</p>
+    </section>
+    <section class="img2" id="perfromance">
+        <h1>Unmatched Performance</h1>
+        <p>Discover exceptional speed and precision with our newest models.</p>
+    </section>
+    <section class="img3" id="progress">
+        <h1>Precision in Every Design</h1>
+        <p>Our vehicles feature advanced technology for an unparalleled driving experience.</p>
+    </section>
+    <section class="img4" id="contact">
+        <h1>Contact Me</h1>
+        <div class="links">
+            <a href="">Instagram:</a><br>
+            <a href="https://www.instagram.com/bhavesh_pawar_23/?igsh=YXRxOHg4bGxoaWl6"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <div class="links">
+            <a href="">Telegram:</a><br>
+            <a href="https://t.me/Bhaveshpawar23"><i class="fa-brands fa-telegram"></i></a>
+        </div>
+        </div>
+    </section>
+    <footer><p class="foot">&copy; 2025 BPG BIKES. All rights reserved</p></footer>
+    
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+    const hamburger = document.querySelector(".ham");
+    const navbar = document.querySelector(".head");
+
+    hamburger.addEventListener("click", () => {
+        navbar.classList.toggle("active");
+    });
+    });
+    window.addEventListener("load", () => {
+    document.getElementById("loading").style.display = "none"; // Hide the loader after content is fully loaded
+    });
+        </script>
+</html>

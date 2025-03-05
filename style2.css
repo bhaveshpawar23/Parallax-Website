@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto", serif;
+    scroll-behavior: smooth;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+header{
+    background-color: rgba(128, 128, 128, 0.496);
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    height: 4rem;
+    width: 80%;
+    margin-top: 2rem;
+    border-radius: 10px;
+    padding: 1rem;
+    position: fixed;
+    z-index: 10;
+}
+.ham{
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+span{
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    transition: .5s;
+}
+.logo{
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+}
+.nav a{
+    margin-right: 2rem;
+    gap: 1.5rem;
+    font-size: 1.05rem;
+    color: white;
+}
+.img1{
+    background-image: url(https://ideogram.ai/assets/progressive-image/balanced/response/JmbUmDjSStmWmTSHAL0ccw);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+}
+.img2{
+    background-image: url(https://wallpapercave.com/wp/wp6624615.jpg);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    background-attachment: fixed;
+    position: relative;
+    background-position: center;
+}
+.img3{
+    background-image: url(https://wallpapercave.com/wp/wp8979238.jpg);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    background-attachment: fixed;
+    position: relative;
+    background-position: center;
+    padding: 1rem;
+}
+.img4{
+    background-image: url(https://wallpapers.com/images/high/4k-bike-bmw-urban-racer-bgttl28n77jhqwfo.webp);
+    min-height: 40vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    position: relative;
+    background-attachment: fixed;
+    background-position: top;
+    padding: 2rem;
+}
+h1{
+    display: flex;
+    place-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: center;
+    width: 100%;
+}
+p{
+    width: 100%;
+    display: flex;
+    place-content: center;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+.links{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+.links a{
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.links i{
+    color: aliceblue;
+    font-size: 2rem;
+    transition: .5s;
+}
+.links i:hover{
+    transform: scale(1.1);
+    color: grey;
+}
+footer{
+    background-color: black;
+    width: 100%;
+}
+footer p{
+    font-weight: 100px;
+}
+@media(max-width: 768px){
+    .nav{
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 150px;
+        background: rgba(255, 255, 255, 0.801);
+        backdrop-filter: blur(10px);
+        border-radius: 10px;
+        flex-direction: column;
+        text-align: center;
+        padding: 15px 0;
+        display: none;
+        box-shadow: 10px 4px 10px rgba(0, 0, 0, 0.3);
+        gap: 1rem;
+    }
+    .nav a{
+        margin-left: 1.7rem;
+    }
+    .ham {
+        display: flex;
+    }
+    
+    .head.active .nav {
+        display: flex;
+    }
+    .nav a {
+        color: black;
+    }
+    .head.active .ham span:nth-child(1) {
+        transform: rotate(45deg);
+        position: absolute;
+    }
+    .head.active .ham span:nth-child(2) {
+        opacity: 0;
+    }
+    .head.active .ham span:nth-child(3) {
+        transform: rotate(-45deg);
+        position: absolute;
+    }
+}
